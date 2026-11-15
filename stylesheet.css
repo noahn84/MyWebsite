@@ -1,0 +1,413 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End CSS Reset */
+
+body {
+  /* background-color: #99CCCC; */
+  background-color: #dddcd7;
+}
+
+/* .container {
+  border: 2px solid black;
+} */
+
+.header h1 {
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.navbar {
+  /* border: 1px solid black; */
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#midBtn {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navbar button {
+  border: none;
+  background-color: #7A7A7A;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+/* 3D Buttons */
+
+.btn3d {
+  position: relative;
+  top: -6px;
+  border: 0;
+  transition: all 40ms linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+  -moz-outline-style: none;
+  outline: medium none;
+}
+
+.btn3d:active,
+.btn3d.active {
+  top: 2px;
+}
+
+
+/* Nav buttons */
+
+
+.btn3d.btn-default {
+  color: black;
+  box-shadow: 0 0 0 1px #bdb9a1 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #a9a48b, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #f0eddb;
+}
+.btn3d.btn-default:active,
+.btn3d.btn-default.active {
+  color: black;
+  box-shadow: 0 0 0 1px #bdb9a1 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+  background-color: #f0eddb;
+}
+
+/* Projects Page */
+
+.projects-container {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  /* border: 1px solid black; */
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #A5322A;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-list {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  /* border: 1px solid black; */
+  width: 475px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+}
+
+.image-container {
+  /* border: 1px solid black; */
+  height: 175px;
+  width: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.project-info {
+  /* border: 1px solid black; */
+  width: 268px;
+  margin-left: 10px;
+  padding: 0px 10px;
+}
+
+.project-info a {
+  color: #0000EE;
+}
+
+.project-info p {
+  /* border: 1px solid black; */
+  margin-top: 10px;
+}
+
+/* Phobos Page */
+
+.phobos-content {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.phobos-content header {
+  /* border: 1px solid black; */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #A5322A;
+  font-size: 50px;
+  margin: 20px;
+}
+
+@media only screen and (max-width:521px) {
+  .phobos-content header {
+    font-size: 30px;
+  }
+}
+
+#phobosGif {
+  width: 200px;
+}
+
+.mediaLeft-section {
+  /* border: 1px solid black; */
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width:900px) {
+  .mediaLeft-section {
+      /* border: 1px solid black; */
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+    }
+}
+
+.mediaRight-section {
+  /* border: 1px solid black; */
+  width: 50%;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width:900px) {
+  .mediaRight-section {
+    /* border: 1px solid black; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+}
+
+#summary-text {
+  /* border: 1px solid black; */
+  width: 100%;
+}
+
+.summary-text {
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-left: 5px;
+}
+
+
+
+/* contact page */
+
+.contact-content {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 320px;
+}
+
+.socialMedia {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.socialMedia img {
+  /* border: 1px solid black; */
+  width: 30px;
+}
+
+.mediaText {
+  /* border: 1px solid black; */
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 10px;
+}
+
+#instaLogo {
+  width: 32px;
+}
+
+.socialMedia a {
+  color: #0000EE;
+}
+
+#contact-header {
+  /* border: 1px solid black; */
+  margin-bottom: 30px;
+  margin-top: 0px;
+  color: #A5322A;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
