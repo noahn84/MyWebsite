@@ -253,6 +253,11 @@ body {
   display: flex;
 }
 
+img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .image-container {
   /* border: 1px solid black; */
   height: 175px;
@@ -261,24 +266,29 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding-left: 2%;
-}
-
-img {
-  min-width: 100%;
-  min-height: 100%;
 }
 
 .project-info {
   /* border: 1px solid black; */
-  width: 268px;
+  width: 270px;
   margin-left: 10px;
-  padding: 0px 10px;
+  padding: 0px 5px;
+}
+
+@media only screen and (max-width:550px) {
+  .image-container {
+    /* border: 1px solid black; */
+    width: 175px;
+    padding-left: 10%;
+  }
 }
 
 @media only screen and (max-width:550px) {
   .project-info {
-    width: 245px;
+    /* border: solid black; */
+    width: 190px;
+    margin-right: 10%;
+    margin-left: 5px;
   }
 }
 
